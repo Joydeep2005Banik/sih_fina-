@@ -1,0 +1,335 @@
+/* Light Mode Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c0;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .logo {
+    height: 40px;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gradient-text-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #3a7bd5, #ff9100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Change this to fit your theme */
+}
+
+.send-button:hover svg {
+    opacity: 0.8;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.chat-box {
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.chat-box .message {
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #fff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding-right: 40px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.languageSelect {
+    justify-content: center;
+    align-items: center;
+}
+
+.mic-icon {
+    position: relative;
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5888b9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #669cd2;
+}
+
+.send-button {
+    position: relative;
+    left: 0px;
+    width: 45px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: opacity 0.3s;
+}
+
+.send-button:hover {
+    opacity: 0.8;
+}
+
+/* Footer Section Styling */
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Dark mode footer text */
+body.dark-mode .footer {
+    color: #e0e0e0;
+}
+
+/* Styling for NJDG link */
+.njdg-link {
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.njdg-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+body.dark-mode .njdg-link {
+    color: #4a90e2;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.chat-container.dark-mode {
+    background-color: #333;
+    border: 1px solid #444;
+}
+
+.chat-box.dark-mode {
+    background-color: #444;
+    border-bottom: 1px solid #555;
+    scrollbar-color: #666 #333;
+    scrollbar-width: thin;
+}
+
+.chat-box.dark-mode .message {
+    color: #e0e0e0;
+}
+
+input[type="text"].dark-mode {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+button.dark-mode {
+    background-color: #5888b9;
+    color: #e0e0e0;
+}
+
+button.dark-mode:hover {
+    background-color: #ee7700;
+}
+
+/* Download Button Image Styling */
+.download-button {
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button .download-icon {
+    max-width: 100%;
+    max-height: 26px;
+    width: auto;
+    height: auto;
+}
+
+.download-button:hover .download-icon {
+    opacity: 0.8;
+}
+
+/* Bulb Icon Styles */
+.icon {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+body.dark-mode .night-mode {
+    display: block;
+}
+
+body.dark-mode .day-mode {
+    display: none;
+}
+
+body:not(.dark-mode) .day-mode {
+    display: block;
+}
+
+body:not(.dark-mode) .night-mode {
+    display: none;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+/* Scrollbar Styles for Webkit Browsers (Chrome, Safari) */
+body.dark-mode ::-webkit-scrollbar {
+    width: 12px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Hover Styles for Light Mode */
+body:not(.dark-mode) .icon {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+body:not(.dark-mode) .icon:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+/* Hover Styles for Dark Mode */
+body.dark-mode .icon {
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+body.dark-mode .icon:hover {
+    background-color: #444;
+    border-color: #666;
+}

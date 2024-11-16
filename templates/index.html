@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and responsive behavior for the page -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title -->
+    <title>Justice Guide Bot</title>
+
+    <!-- Link to the external CSS file for styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+    <!-- Favicon for the page -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/NyayaSarthi.ico') }}">
+</head>
+<body>
+    
+    <header class="dark-mode">
+        <!-- Page Header and DOJ Logo -->
+        <h1>Department of Justice Virtual Assistant</h1>
+        <img src="{{ url_for('static', filename='images/emblem.svg') }}" alt="DOJ Logo" class="logo" />
+    </header>
+
+    <!-- Dark mode toggle section -->
+    <div class="dark-mode-toggle">
+        <!-- Day mode icon -->
+        <img id="darkModeToggle" src="{{ url_for('static', filename='images/night.png') }}" alt="Toggle Dark Mode" class="icon day-mode" />
+        <!-- Night mode icon (initially hidden) -->
+        <img id="darkModeToggleNight" src="{{ url_for('static', filename='images/day-mode.png') }}" alt="Toggle Dark Mode" class="icon night-mode hidden" />
+    </div>
+    
+    <main>
+        <!-- Introduction text with gradient styling -->
+        <div class="gradient-text-container">
+            <h2 class="gradient-text">Hi I am NyayaSarthi, your virtual assistant</h2>
+            <p class="subtext">How can I help you today?</p>
+        </div>
+        
+        <!-- Chat container to hold chat messages and input section -->
+        <div class="chat-container dark-mode">
+            <!-- Chat messages will be dynamically appended here -->
+            <div class="chat-box dark-mode" id="chatBox">
+                <!-- Placeholder for chat messages -->
+            </div>
+
+            <!-- Input section for user interaction -->
+            <div class="input-container dark-mode">
+                <!-- Input area with voice button and text input -->
+                <div class="input-wrapper">
+                    <!-- Button for voice search -->
+                    <button id="voiceButton" class="mic-icon">🎙️</button>
+                    <!-- Text input for user messages -->
+                    <input type="text" id="userInput" placeholder="Type your message..." class="dark-mode"/>
+                </div>
+                
+                <!-- Send button with an SVG icon -->
+                <button id="sendButton" class="send-button dark-mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black" stroke-width="2" width="32" height="32">
+                        <!-- Send icon path -->
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M22 12L2 22l4-10L2 2l20 10z" />
+                    </svg>
+                </button>
+
+                <!-- Language selection dropdown -->
+                <label for="languageSelect">Lang:</label>
+                <select id="languageSelect">
+                    <option value="en-US">English</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="bn-BD">Bengali</option>
+                    <option value="ta-IN">Tamil</option>
+                    <option value="te-IN">Telugu</option>
+                    <option value="ml-IN">Malayalam</option>
+                    <option value="kn-IN">Kannada</option>
+                    <option value="gu-IN">Gujarati</option>
+                    <option value="mr-IN">Marathi</option>
+                    <option value="pa-IN">Punjabi</option>
+                    <option value="ur-IN">Urdu</option>
+                    <option value="ne-NP">Nepali</option>
+                </select>
+                <br>
+                <br>
+                
+                <!-- Download button to download chat history -->
+                <button id="downloadButton" class="download-button dark-mode">
+                    <img src="{{ url_for('static', filename='images/download-.png') }}" alt="Download" class="download-icon" />
+                </button>
+            </div>
+        </div>
+        
+        <!-- Footer section with a disclaimer and external link -->
+        <footer class="footer dark-mode">
+            <p>VidhikAI can make mistakes. For more information, visit the website of 
+                <a href="https://njdg.ecourts.gov.in/njdgnew/index.php" class="njdg-link" target="_blank" title="Visit NJDG">NJDG</a>.
+            </p>
+        </footer>
+    </main>
+
+    <!-- JavaScript file linked to handle interactions -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

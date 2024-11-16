@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Chat History</title>
+    
+    <!-- Font Awesome icons for additional UI elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts (Poppins) for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS for layout and design -->
+    <style>
+        /* General body styles: font, background, and layout */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the chat history table */
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Table style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Table cell styles for both header and body */
+        th, td {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Header row background */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Alternating row color for readability */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Page title: Chat History -->
+        <h1>Chat History</h1>
+
+        <!-- Table to display chat history -->
+        <table>
+            <thead>
+                <tr>
+                    <!-- Column headers: Timestamp, User, Message, Response -->
+                    <th>Timestamp</th>
+                    <th>User</th>
+                    <th>Message</th>
+                    <th>Response</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Looping through the chat history data -->
+                {% for entry in chat_history %}
+                <tr>
+                    <!-- Display each entry's timestamp, user, message, and response -->
+                    <td>{{ entry.timestamp }}</td>
+                    <td>{{ entry.user }}</td>
+                    <td>{{ entry.message }}</td>
+                    <td>{{ entry.response }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

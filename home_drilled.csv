@@ -1,0 +1,22 @@
+Category,Particulars,Civil,Criminal,Total
+Pending Cases,0 to 1 Years,4307971,11901816,16209787
+Pending Cases,1 to 3 Years,2671085,7752853,10423938
+Pending Cases,3 to 5 Years,1448715,4770943,6219658
+Pending Cases,5 to 10 Years,1772469,5958767,7731236
+Pending Cases,10 to 20 Years,655227,2946293,3601520
+Pending Cases,20 to 30 Years,101036,431156,532192
+Pending Cases,Above 30 Years,29027,70594,99621
+Pending Cases,Total,10985530,33832422,44817952
+Case Type Wise,Original,8228333,30383468,38611801
+Case Type Wise,Appeal,481373,414820,896193
+Case Type Wise,Application,661957,2670912,3332869
+Case Type Wise,Execution,1400291,68865,1469156
+Stage Wise,Appearance/Service Related,2592426,15496472,18088898
+Stage Wise,Compliance/Steps/stay,1916606,2168683,4085289
+Stage Wise,Evidence/Argument/Judgement,4399364,10827451,15226815
+Stage Wise,Pleadings/Issues/Charge,1471515,2450333,3921848
+Institution,Cases Instituted in Last Month,303160,1631476,1934636
+Disposal,Cases Disposed in Last Month,293087,991653,1284740
+Senior Citizen,Filed Cases By Senior Citizen,2230379,676093,2906472
+Woman,Filed Cases By Woman,1778614,1913864,3692478
+Delay Reason Wise,Delay Reason,4192720,15217729,19410449
