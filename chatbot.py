@@ -195,7 +195,7 @@ def ai21_api_call(client, messages, retries=3):
     while attempt < retries:
         try:
             response = client.chat.completions.create(
-                model="jamba-1.5-large",
+                model="jamba-1.6-large",
                 messages=messages,
                 top_p=0.9,
                 temperature=0.5,
