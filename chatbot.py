@@ -20,7 +20,7 @@ file2=open("High_drilled.csv","r",encoding="utf8")
 
 # List of API key to use
 api_key = [
-    "78Qlsf3v7nK7nWydYBGPtxiYDc4S1Qfm","9XNOrcQ3GniqixX0vFxWSU0UkoGsiDR2","UFWaXmTqereBBCGVgwPgFa0UZ2Z6lyKl","ddNsbeF3vObrwSxeFbIyUgyPPq7OJM3L","pTBVfbDQ0G2cxqkhCYuDwFcULj4E6l6e"
+    <YOUR_API_KEY_HERE>
 ]
 
 # Initialize AI21Client with the first API key
